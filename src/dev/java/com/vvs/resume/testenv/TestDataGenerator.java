@@ -46,7 +46,7 @@ public class TestDataGenerator {
 
 	private static final String PHOTO_PATH = "external/test-data/photos/";
 	private static final String CERTIFICATES_PATH = "external/test-data/certificates/";
-	private static final String MEDIA_DIR = "/Users/victors/Udemy/workspace/resume/src/main/webapp/media";
+	private static final String MEDIA_DIR = "/Users/victors/Udemy/workspace/resum/src/main/webapp/media";
 	private static final String COUTRY = "Ukraine";
 	private static final String[] CITIES = { "Kharkiv", "Kiyv", "Odessa" };
 	private static final String[] FOREGIN_LANGUAGES = { "Spanish", "French", "German", "Italian" };
@@ -122,9 +122,20 @@ public class TestDataGenerator {
 	}
 
 	private static void clearDb(Connection c) throws SQLException {
+
 		Statement st = c.createStatement();
-		st.executeUpdate("delete from profile");
-		st.executeUpdate("delete from skill_category");
+		
+		st.executeUpdate("TRUNCATE TABLE public.certificate CONTINUE IDENTITY RESTRICT");
+		st.executeUpdate("TRUNCATE TABLE public.course CONTINUE IDENTITY RESTRICT");
+		st.executeUpdate("TRUNCATE TABLE public.education CONTINUE IDENTITY RESTRICT");
+		st.executeUpdate("TRUNCATE TABLE public.hobby CONTINUE IDENTITY RESTRICT");
+		st.executeUpdate("TRUNCATE TABLE public.language CONTINUE IDENTITY RESTRICT");
+		st.executeUpdate("TRUNCATE TABLE public.practic CONTINUE IDENTITY RESTRICT");
+		st.executeUpdate("TRUNCATE TABLE public.profile CONTINUE IDENTITY RESTRICT");
+		st.executeUpdate("TRUNCATE TABLE public.profile_restore CONTINUE IDENTITY RESTRICT");
+		st.executeUpdate("TRUNCATE TABLE public.skill CONTINUE IDENTITY RESTRICT");
+		st.executeUpdate("TRUNCATE TABLE public.skill_category CONTINUE IDENTITY RESTRICT");
+
 		st.executeQuery("select setval('profile_seq', 1, false)");
 		st.executeQuery("select setval('hobby_seq', 1, false)");
 		st.executeQuery("select setval('certificate_seq', 1, false)");
@@ -133,6 +144,7 @@ public class TestDataGenerator {
 		st.executeQuery("select setval('practic_seq', 1, false)");
 		st.executeQuery("select setval('skill_seq', 1, false)");
 		st.executeQuery("select setval('course_seq', 1, false)");
+		
 		System.out.println("Db cleared");
 	}
 
