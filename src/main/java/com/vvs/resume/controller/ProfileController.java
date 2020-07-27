@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/")
+@WebServlet("/profile")
 public class ProfileController extends HttpServlet {
        
 	private static final long serialVersionUID = -22853229714371429L;
