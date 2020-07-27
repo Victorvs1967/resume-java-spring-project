@@ -5,17 +5,17 @@
 	<div class="row">
 		<div class="col-lg-4">
 			<resume:profile-main />
-			<resume:languages />
-			<resume:hobbi />
-			<resume:additional />
+			<resume:profile-languages />
+			<resume:profile-hobbi />
+			<resume:profile-additional />
 		</div>
 		<div class="col-lg-8">
-			<resume:objective />
-			<resume:skill />
-			<resume:practice />
-			<resume:certificates />
-			<resume:courses />
-			<resume:education />
+			<resume:profile-objective />
+			<resume:profile-skill />
+			<resume:profile-practice />
+			<resume:profile-certificates />
+			<resume:profile-courses />
+			<resume:profile-education />
 		</div>
 	</div>
 </div>
