@@ -2,12 +2,10 @@
 
 <div class="card mt-2 mb-2">
 	<div class="card-header bg-secondary text-light">
-		<i class="fa fa-language fa-lg mr-1"></i>Foreign languages
+		<i class="fa fa-language"></i> Foreign languages <a class="edit-block" href="/edit/languages">Edit</a>
 	</div>
-	<ul class="list-group list-group-flush">
-		<li class="list-group-item">Cras justo odio</li>
-		<li class="list-group-item">Dapibus ac facilisis in</li>
-		<li class="list-group-item">Vestibulum at eros</li>
-	</ul>
+	<div class="card-body">
+		<strong>English:</strong> Intermediate<br>
+	</div>
 </div>
 

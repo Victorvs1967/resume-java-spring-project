@@ -2,11 +2,12 @@
 
 <div class="card mt-2 mb-2">
 	<div class="card-header bg-secondary text-light">
-		<i class="fa fa-info-circle fa-lg mr-1"></i>Additional info
+		<i class="fa fa-info-circle"></i> Additional info <a class="edit-block" href="/edit/info">Edit</a>
 	</div>
-	<ul class="list-group list-group-flush">
-		<li class="list-group-item">Cras justo odio</li>
-		<li class="list-group-item">Dapibus ac facilisis in</li>
-		<li class="list-group-item">Vestibulum at eros</li>
-	</ul>
+	<div class="card-body">
+
+		<ul class="list-group list-group-flush">
+			<li class="list-group-item">Married, Two children</li>
+		</ul>
+	</div>
 </div>

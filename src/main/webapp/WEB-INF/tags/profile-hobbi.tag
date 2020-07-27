@@ -2,11 +2,35 @@
 
 <div class="card mt-2 mb-2">
 	<div class="card-header bg-secondary text-light">
-		<i class="fa fa-heart fa-lg mr-1"></i>Hobbi
+		<i class="fa fa-heart"></i> Hobbi <a class="edit-block" href="/edit/hobby">Edit</a>
 	</div>
-	<ul class="list-group list-group-flush">
-		<li class="list-group-item">Cras justo odio</li>
-		<li class="list-group-item">Dapibus ac facilisis in</li>
-		<li class="list-group-item">Vestibulum at eros</li>
-	</ul>
+	<div class="card-body">
+		<div class="hobbies">
+			<table class="table table-bordered">
+				<tbody>
+					<tr>
+						<td><i class="fa fa-heart"></i></td>
+						<td>Computer games</td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-heart"></i></td>
+						<td>Football</td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-heart"></i></td>
+						<td>Handball</td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-heart"></i></td>
+						<td>Shooting</td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-heart"></i></td>
+						<td>Skateboarding</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
 </div>
+

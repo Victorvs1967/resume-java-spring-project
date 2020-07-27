@@ -2,11 +2,53 @@
 
 <div class="card mt-2 mb-2">
 	<div class="card-header bg-secondary text-light">
-		<i class="fa fa-code fa-lg mr-1"></i>Technical skill
+		<i class="fa fa-code"></i> Technical Skills <a class="edit-block" href="/edit/skills">Edit</a>
 	</div>
 	<div class="card-body">
-		<h5 class="card-title">Special title treatment</h5>
-		<p class="card-text">With supporting text below as a natural lead-in to additional content. Some quick example text to build on the card
-			title and make up the bulk of the card's content.</p>
+		<table class="table table-striped table-bordered">
+			<tbody>
+				<tr>
+					<th style="width: 140px;">Category</th>
+					<th>Frameworks and technologies</th>
+				</tr>
+				<tr>
+					<td>Languages</td>
+					<td>Java, SQL, PLSQL</td>
+				</tr>
+				<tr>
+					<td>DBMS</td>
+					<td>Postgresql, Mysql</td>
+				</tr>
+				<tr>
+					<td>Web</td>
+					<td>HTML, CSS, JS, Bootstrap, JQuery, Foundation</td>
+				</tr>
+				<tr>
+					<td>Java</td>
+					<td>Spring MVC, Logback, JSP, JSTL, Spring Data JPA, Apache Commons, Spring Security, Hibernate JPA, Facebook Social API, Servlets,
+						JDBC, Google+ Social API, Threads, IO, JAXB, GSON</td>
+				</tr>
+				<tr>
+					<td>IDE</td>
+					<td>Eclipse for JEE Developer</td>
+				</tr>
+				<tr>
+					<td>CVS</td>
+					<td>Git, Github</td>
+				</tr>
+				<tr>
+					<td>Web Servers</td>
+					<td>Tomcat, Nginx</td>
+				</tr>
+				<tr>
+					<td>Build system</td>
+					<td>Maven</td>
+				</tr>
+				<tr>
+					<td>Cloud</td>
+					<td>AWS,OpenShift</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 </div>

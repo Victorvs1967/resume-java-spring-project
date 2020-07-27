@@ -2,11 +2,13 @@
 
 <div class="card mt-2 mb-2">
 	<div class="card-header bg-secondary text-light">
-		<i class="fa fa-bullseye fa-lg mr-1"></i>Objective
+		<i class="fa fa-bullseye"></i> Objective <a class="edit-block" href="/edit#inputObjective">Edit</a>
 	</div>
 	<div class="card-body">
-		<h5 class="card-title">Special title treatment</h5>
-		<p class="card-text">With supporting text below as a natural lead-in to additional content. Some quick example text to build on the card
-			title and make up the bulk of the card's content.</p>
+		<h4>Junior java developer position</h4>
+		<p>
+			<strong>Summary of Qualifications:</strong> <br> Three Java professional courses with developing one console application and two web
+			applications: blog and resume (Links to demo are provided)
+		</p>
 	</div>
 </div>

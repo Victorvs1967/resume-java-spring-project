@@ -13,9 +13,9 @@
 			<resume:profile-objective />
 			<resume:profile-skill />
 			<resume:profile-practice />
-			<resume:profile-certificates />
-			<resume:profile-courses />
 			<resume:profile-education />
+			<resume:profile-courses />
+			<resume:profile-certificates />
 		</div>
 	</div>
 </div>

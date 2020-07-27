@@ -5,8 +5,39 @@
 		<i class="fa fa-graduation-cap fa-lg mr-1"></i>Education
 	</div>
 	<div class="card-body">
-		<h5 class="card-title">Special title treatment</h5>
-		<p class="card-text">With supporting text below as a natural lead-in to additional content. Some quick example text to build on the card
-			title and make up the bulk of the card's content.</p>
+		<ul class="timeline ml-2 mr-2">
+			<li>
+				<div class="timeline-badge">
+					<i class="fa fa-check-square-o" aria-hidden="true"></i>
+				</div>
+				<div class="timeline-panel">
+					<div class="timeline-heading">
+						<h4 class="timeline-title" style="cursor: pointer;">Mussum ipsum cacilds</h4>
+						<p>
+							<small class="text-muted"><i class="fa fa-calendar mr-1" aria-hidden="true"></i>11 hours ago via Twitter</small>
+						</p>
+					</div>
+					<div class="timeline-body">
+						<p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis,
+							espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium
+							dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais
+							bolis eu num gostis.</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="timeline-panel">
+					<div class="timeline-heading">
+						<h4 class="timeline-title" style="cursor: pointer;">Mussum ipsum cacilds</h4>
+					</div>
+					<div class="timeline-body">
+						<p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis,
+							espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium
+							dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais
+							bolis eu num gostis.</p>
+					</div>
+				</div>
+			</li>
+		</ul>
 	</div>
 </div>
