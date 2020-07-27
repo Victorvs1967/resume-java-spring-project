@@ -2,7 +2,7 @@
 
 <div class="card mt-2 mb-2">
 	<div class="card-header bg-secondary text-light">
-		<i class="fa fa-graduation-cap fa-lg mr-1"></i>Education
+		<i class="fa fa-graduation-cap fa-lg mr-1"></i>Education <a class="edit-block" href="/edit#inputObjective">Edit</a>
 	</div>
 	<div class="card-body">
 		<ul class="timeline ml-2 mr-2">
