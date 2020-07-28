@@ -4,14 +4,10 @@
 	<img src="/media/avatar/4a4c91aa-5992-47b1-86bc-12875b957fe3.jpg" class="card-img-top" alt="avatar">
 	<div class="card-body pl-0 pr-0">
 		<h2 class="card-title ml-3">
-			<a style="color: black; text-decoration: none;" href="/edit">${name != null ? name : 'Richard Hendricks' }</a>
+			<a style="color: black; text-decoration: none;" href="/edit">${fullName }</a>
 		</h2>
-		<h6 class="text-center">
-			<strong>Odessa, Ukraine</strong>
-		</h6>
-		<h6 class="text-center">
-			<strong>Age:</strong> 27, <strong>Birthday: </strong> Feb 26, 1989
-		</h6>
+		<h6 class="ml-3"><strong>Odessa, Ukraine</strong></h6>
+		<h6 class="ml-3"><strong>Age:</strong> 27, <strong>Birthday: </strong> Feb 26, 1989</h6>
 		<div class="list-group contacts">
 			<a class="list-group-item" href="tel:+380507525137"><i class="fa fa-phone"></i> +380507525137</a>
 			<a class="list-group-item" href="mailto:richard-hendricks@gmail.com"><i class="fa fa-envelope"></i> richard-hendricks@gmail.com</a>
