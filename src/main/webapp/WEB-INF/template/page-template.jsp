@@ -4,12 +4,14 @@
 <html lang="ru">
 
 <head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<jsp:include page="../section/css.jsp" />
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<jsp:include page="../section/css.jsp" />
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<title>Resume</title>	
 </head>
-<body>
+<body class="resume">
 	<jsp:include page="../section/header.jsp" />
 	<jsp:include page="../section/nav.jsp" />
 	<section class="main">

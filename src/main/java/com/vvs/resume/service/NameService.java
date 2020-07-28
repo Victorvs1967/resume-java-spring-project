@@ -1,12 +1,7 @@
 package com.vvs.resume.service;
 
-public class NameService {
+public interface NameService {
 
-	public static NameService getInstance(){
-		return new NameService();
-	}
+	String convertName(String name);
 
-	public String convertName(String name) {
-		return name.toUpperCase();
-	}
 }
