@@ -50,6 +50,10 @@
 	text-align: center;
 }
 
+.timeline-title {
+	cursor: pointer;
+}
+
 ..resume .certificates .thumbnail {
 	width: 160px;
 	margin: 0 auto;

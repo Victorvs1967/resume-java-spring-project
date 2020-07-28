@@ -12,7 +12,7 @@
 				</div>
 				<div class="timeline-panel">
 					<div class="timeline-heading">
-						<h4 class="timeline-title" style="cursor: pointer;">Mussum ipsum cacilds</h4>
+						<h4 class="timeline-title">Mussum ipsum cacilds</h4>
 						<p>
 							<small class="text-muted"><i class="fa fa-calendar mr-1" aria-hidden="true"></i>11 hours ago via Twitter</small>
 						</p>
@@ -28,7 +28,7 @@
 			<li>
 				<div class="timeline-panel">
 					<div class="timeline-heading">
-						<h4 class="timeline-title" style="cursor: pointer;">Mussum ipsum cacilds</h4>
+						<h4 class="timeline-title">Mussum ipsum cacilds</h4>
 					</div>
 					<div class="timeline-body">
 						<p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis,
