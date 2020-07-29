@@ -12,7 +12,7 @@
 				</div>
 				<div class="timeline-panel">
 					<div class="timeline-heading">
-						<h4 class="timeline-title">Mussum ipsum cacilds</h4>
+						<h5 class="timeline-title">Mussum ipsum cacilds</h5>
 					</div>
 					<div class="timeline-body">
 						<p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis,
@@ -38,7 +38,7 @@
 			<li>
 				<div class="timeline-panel">
 					<div class="timeline-heading">
-						<h4 class="timeline-title">Mussum ipsum cacilds</h4>
+						<h5 class="timeline-title">Mussum ipsum cacilds</h5>
 					</div>
 					<div class="timeline-body">
 						<p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis,

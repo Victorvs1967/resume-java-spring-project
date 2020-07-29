@@ -5,6 +5,10 @@
 	color: #222;
 }
 
+.resume td {
+	font-size: 0.9em;
+	}
+
 .resume .contacts {
 	margin-top: 30px;
 }
@@ -27,7 +31,7 @@
 	width: 25px;
 }
 .resume .contacts a {
-	font-size: 1em;
+	font-size: 0.9em;
 	text-decoration: none;
 	color: black;
 }
@@ -54,6 +58,9 @@
 	cursor: pointer;
 }
 
+.timeline-body {
+	font-size: 0.9em;
+}
 ..resume .certificates .thumbnail {
 	width: 160px;
 	margin: 0 auto;

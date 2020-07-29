@@ -12,7 +12,7 @@
 				</div>
 				<div class="timeline-panel">
 					<div class="timeline-heading">
-						<h4 class="timeline-title">Java Advanced Course at DevStudy.net</h4>
+						<h5 class="timeline-title">Java Advanced Course at DevStudy.net</h5>
 						<p>
 							<small class="text-muted"><i class="fa fa-calendar mr-1" aria-hidden="true"></i>Apr 2000 <span class="badge badge-pill badge-danger">Current</span></small>
 						</p>
@@ -37,7 +37,7 @@
 				</div>
 				<div class="timeline-panel">
 					<div class="timeline-heading">
-						<h4 class="timeline-title" style="cursor: pointer;">Mussum ipsum cacilds</h4>
+						<h5 class="timeline-title" style="cursor: pointer;">Mussum ipsum cacilds</h5>
 					</div>
 					<div class="timeline-body">
 						<p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis,

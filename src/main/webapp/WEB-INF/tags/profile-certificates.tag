@@ -5,7 +5,7 @@
 			<i class="fa fa-certificate"></i> Certificates <a class="edit-block" href="/edit/certificates">Edit</a>
 	</div>
 	<div class="card-body certificates">
-		<a data-url="/media/certificates/10e5b86b-fd5b-490a-9090-6e71270ed40f.jpg" data-title="Jee certificate" href="#" class="thumbnail certificate-link">
+		<a data-url="/media/certificates/2c1a7d42-78a9-4693-8700-7b76075b9239-sm.jpg" data-title="Jee certificate" href="#" class="thumbnail certificate-link">
 			<img alt="Jee certificate" src="/media/certificates/2c1a7d42-78a9-4693-8700-7b76075b9239-sm.jpg" class="img-responsive"> <span>Jee certificate</span>
 		</a> 
 	</div>
