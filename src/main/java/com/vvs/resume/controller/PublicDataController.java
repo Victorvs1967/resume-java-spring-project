@@ -6,24 +6,27 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import com.vvs.resume.service.NameService;
+import com.vvs.resume.entity.Profile;
+import com.vvs.resume.repository.storage.ProfileRepository;
 
 @Controller
 public class PublicDataController {
 	
 	@Autowired
-	private NameService nameService;
-	
-	@GetMapping("/{uid}")
-	public String getProfile(@PathVariable("uid") String uid, Model model) {
-		
-		String fullName = nameService.convertName(uid);
-		model.addAttribute("fullName", fullName);
+	private ProfileRepository profileRepository;
+
+	@GetMapping(value="/{uid}")
+	public String getProfile(@PathVariable("uid") String uid, Model model){
+		Profile profile = profileRepository.findByUid(uid);
+		if(profile == null) {
+			return "profile_not_found";
+		}
+		model.addAttribute("profile", profile);
 		return "profile";
 	}
-
-	@GetMapping("/error")
-	public String getError() {
+	
+	@GetMapping(value="/error")
+	public String getError(){
 		return "error";
 	}
 }
