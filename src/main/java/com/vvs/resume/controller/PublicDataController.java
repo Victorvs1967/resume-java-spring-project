@@ -25,6 +25,16 @@ public class PublicDataController {
 		return "profile";
 	}
 	
+	@GetMapping(value="/all")
+	public String getAllProfile(Model model){
+		Iterable<Profile> profiles = profileRepository.findAll();
+		if(profiles == null) {
+			return "profile_not_found";
+		}
+		model.addAttribute("profiles", profiles);
+		return "profile-list";
+	}
+	
 	@GetMapping(value="/error")
 	public String getError(){
 		return "error";

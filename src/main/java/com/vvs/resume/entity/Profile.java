@@ -303,7 +303,7 @@ public class Profile extends AbstractEntity<Long> implements Serializable {
 	}
 	
 	@Transient
-	public int getAge(){
+	public int getAge() {
 		LocalDate birthdate = new LocalDate (birthday);
 		LocalDate now = new LocalDate();
 		Years age = Years.yearsBetween(birthdate, now);

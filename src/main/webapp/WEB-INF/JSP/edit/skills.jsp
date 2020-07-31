@@ -5,7 +5,7 @@
 
 <div class="container-fluid pl-0 pr-0">
 	<div class="card">
-		<div class="panel-body pl-4 pr-4">
+		<div class="card-body pl-4 pr-4">
 			<h3 class="data-header">Технические навыки во фреймворках и технологиях</h3>
 			<hr />
 			<div class="row" style="margin-bottom: 20px;">
@@ -28,9 +28,9 @@
 					</div>
 				</div>
 				<hr />
-				<div class="row pl-4 mb-2">
-					<div class="col-xs-12 text-center">
-						<input type="submit" class="btn btn-primary" value="Сохранить">
+				<div class="row mb-2  text-center d-block">
+					<div class="col-xs-12">
+						<a href="/${profile.uid }" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">Сохранить</a>
 					</div>
 				</div>
 			</form:form>
