@@ -30,10 +30,7 @@ public class EditProfileController {
 	
 	@GetMapping(value = "/edit/skills/{uid}")
 	public String getEditTechSkills(@PathVariable String uid, Model model) {
-		Profile profile = profileRepository.findByUid(uid);
-//		Profile profile = profileRepository.findById(1L).orElse(new Profile());
-		model.addAttribute("skillForm", new SkillForm(profile.getSkills()));
-		model.addAttribute("profile", profile);
+		model.addAttribute("skillForm", new SkillForm(profileRepository.findByUid(uid).getSkills()));
 		return gotoSkillsJSP(model);
 	}
 
