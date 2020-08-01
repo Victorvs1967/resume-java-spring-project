@@ -22,10 +22,11 @@ public class PublicDataController {
 			return "profile_not_found";
 		}
 		model.addAttribute("profile", profile);
+		model.addAttribute("uid", uid);
 		return "profile";
 	}
 	
-	@GetMapping(value="/all")
+	@GetMapping(value="/welcome")
 	public String getAllProfile(Model model){
 		Iterable<Profile> profiles = profileRepository.findAll();
 		if(profiles == null) {

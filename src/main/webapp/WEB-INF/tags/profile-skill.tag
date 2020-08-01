@@ -2,7 +2,7 @@
 
 <div class="card mt-2 mb-2">
 	<div class="card-header bg-secondary text-light">
-		<i class="fa fa-code"></i> Technical Skills <a class="edit-block" href="/edit/skills">Edit</a>
+		<i class="fa fa-code"></i> Technical Skills <a class="edit-block" href="/edit/skills/${uid }">Edit</a>
 	</div>
 	<div class="card-body">
 		<table class="table table-striped table-bordered">

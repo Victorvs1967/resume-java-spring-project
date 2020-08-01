@@ -7,13 +7,14 @@
 		<div class="card border-secondary mb-2">
 			<div class="row no-gutter">
 				<div class="col-md-3">
-					<a href="/${profile.uid }"><img src="${profile.largePhoto }" class="img-thumbnail m-1" alt="Profile image"></a>
+					<a href="/${profile.uid }"><img src="${profile.largePhoto }" class="img-thumbnail m-1 " alt="Profile image"></a>
 				</div>
-				<div class="col-md-8">
+				<div class="col-md-9">
 					<div class="card-body">
-						<h5 class="card-title">
-							<a style="color: black; text-decoration: none;" href="/${profile.uid }">${profile.fullName}, ${profile.age }</a>
-						</h5>
+						<div class="card-title d-flex">
+							<h4><a style="color: black; text-decoration: none;" href="/${profile.uid }">${profile.fullName}, ${profile.age }</a></h4>
+							<a class="btn btn-secondary ml-auto"  href="/${profile.uid }">Detail</a>
+						</div>
 						<p class="card-text">${profile.objective }</p>
 						<p class="card-text">${profile.summary }</p>
 						<p class="card-text">

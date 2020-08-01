@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.vvs.resume.entity.Profile;
@@ -27,9 +28,10 @@ public class EditProfileController {
 		return "edit";
 	}
 	
-	@GetMapping(value = "/edit/skills")
-	public String getEditTechSkills(Model model) {
-		Profile profile = profileRepository.findById(1L).orElse(new Profile());
+	@GetMapping(value = "/edit/skills/{uid}")
+	public String getEditTechSkills(@PathVariable String uid, Model model) {
+		Profile profile = profileRepository.findByUid(uid);
+//		Profile profile = profileRepository.findById(1L).orElse(new Profile());
 		model.addAttribute("skillForm", new SkillForm(profile.getSkills()));
 		model.addAttribute("profile", profile);
 		return gotoSkillsJSP(model);
@@ -41,7 +43,7 @@ public class EditProfileController {
 			return gotoSkillsJSP(model);
         }
 		//TODO Update skills 
-		return "redirect:/mike-ross";
+		return "redirect:/welcome";
 	}
 	
 	private String gotoSkillsJSP(Model model){
