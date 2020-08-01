@@ -30,7 +30,7 @@
 				<hr />
 				<div class="row mb-2  text-center d-block">
 					<div class="col-xs-12">
-						<a href="/${profile.uid }" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">Сохранить</a>
+						<a href="/${uid }" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">Сохранить</a>
 					</div>
 				</div>
 			</form:form>
