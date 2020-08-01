@@ -61,7 +61,7 @@
 .timeline-body {
 	font-size: 0.9em;
 }
-..resume .certificates .thumbnail {
+.resume .certificates .thumbnail {
 	width: 160px;
 	margin: 0 auto;
 	display: inline-block;
