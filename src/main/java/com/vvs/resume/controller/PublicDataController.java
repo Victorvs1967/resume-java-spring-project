@@ -7,28 +7,29 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import com.vvs.resume.entity.Profile;
-import com.vvs.resume.repository.storage.ProfileRepository;
+import com.vvs.resume.service.FindProfileService;
 
 @Controller
 public class PublicDataController {
 	
 	@Autowired
-	private ProfileRepository profileRepository;
+		private FindProfileService findProfileService;
 
 	@GetMapping(value="/{uid}")
-	public String getProfile(@PathVariable("uid") String uid, Model model){
-		Profile profile = profileRepository.findByUid(uid);
+	public String getProfile(@PathVariable("uid") String uid, Model model) {
+		Profile profile = findProfileService.findByUid(uid);
 		if(profile == null) {
 			return "profile_not_found";
 		}
 		model.addAttribute("profile", profile);
+		model.addAttribute("uid", uid);
 		return "profile";
 	}
 	
-	@GetMapping(value="/all")
-	public String getAllProfile(Model model){
-		Iterable<Profile> profiles = profileRepository.findAll();
-		if(profiles == null) {
+	@GetMapping(value="/welcome")
+	public String getAllProfile(Model model) {
+		Iterable<Profile> profiles = findProfileService.findAll();
+		if (profiles == null) {
 			return "profile_not_found";
 		}
 		model.addAttribute("profiles", profiles);
@@ -36,7 +37,7 @@ public class PublicDataController {
 	}
 	
 	@GetMapping(value="/error")
-	public String getError(){
+	public String getError() {
 		return "error";
 	}
 }

@@ -4,12 +4,15 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.validation.Valid;
+
 import com.vvs.resume.entity.Skill;
 
 public class SkillForm implements Serializable {
 
 	private static final long serialVersionUID = 504204706507567873L;
 	
+	@Valid
 	private List<Skill> items = new ArrayList<>();
 	
 	public SkillForm() {
