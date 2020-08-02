@@ -30,7 +30,9 @@
 				<hr />
 				<div class="row mb-2  text-center d-block">
 					<div class="col-xs-12">
-						<a href="/${uid }" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">Сохранить</a>
+						<div class="col-xs-12 text-center">
+							<input type="submit" class="btn btn-primary" value="Сохранить">
+						</div>
 					</div>
 				</div>
 			</form:form>
