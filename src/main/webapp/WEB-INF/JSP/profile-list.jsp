@@ -3,26 +3,5 @@
 <%@ taglib prefix="resume" tagdir="/WEB-INF/tags"%>
 
 <c:forEach var="profile" items="${profiles }">
-	<div class="container">
-		<div class="card border-secondary mb-2">
-			<div class="row no-gutter">
-				<div class="col-md-3">
-					<a href="/${profile.uid }"><img src="${profile.largePhoto }" class="img-thumbnail m-1 " alt="Profile image"></a>
-				</div>
-				<div class="col-md-9">
-					<div class="card-body">
-						<div class="card-title d-flex">
-							<h4><a style="color: black; text-decoration: none;" href="/${profile.uid }">${profile.fullName}, ${profile.age }</a></h4>
-							<a class="btn btn-secondary ml-auto"  href="/${profile.uid }">Detail</a>
-						</div>
-						<p class="card-text">${profile.objective }</p>
-						<p class="card-text">${profile.summary }</p>
-						<p class="card-text">
-							<small class="text-muted">${profile.created }</small>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<resume:profile-small-block profile="${profile }" />
 </c:forEach>
