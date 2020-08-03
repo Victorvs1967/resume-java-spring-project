@@ -15,13 +15,11 @@ public class FindProfileServiceImpl implements FindProfileService {
 	
 	@Override
 	public Profile findByUid(String uid) {
-
 		return profileRepository.findByUid(uid);
 	}
 	
 	@Override
-	public Iterable<Profile> findAll() {
-		
+	public Iterable<Profile> findAll() {		
 		return profileRepository.findAll();
 	}
 }
