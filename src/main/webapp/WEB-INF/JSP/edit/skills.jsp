@@ -16,7 +16,7 @@
 					<h4>Фреймворк и технология</h4>
 				</div>
 			</div>
-			<form:form action="/edit/skills" method="post" modelAttribute="skillForm">
+			<form:form action="/edit/skills?uid=${uid }" method="post" modelAttribute="skillForm">
 				<div id="ui-block-container">
 					<c:forEach var="skill" items="${skillForm.items }" varStatus="status">
 						<resume:edit-skill-block index="${status.index}" skill="${skill }" />
