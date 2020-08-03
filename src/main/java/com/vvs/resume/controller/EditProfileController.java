@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.vvs.resume.form.SkillForm;
 import com.vvs.resume.repository.storage.ProfileRepository;
 import com.vvs.resume.repository.storage.SkillCategoryRepository;
+import com.vvs.resume.service.FindProfileService;
 
 @Controller
 public class EditProfileController {
@@ -22,7 +23,7 @@ public class EditProfileController {
 	private SkillCategoryRepository skillCategoryRepository;
 	
 	@Autowired
-	private ProfileRepository profileRepository;
+	private FindProfileService findProfileService;
 	
 	@GetMapping(value="/edit")
 	public String getEditProfile() {
@@ -31,7 +32,7 @@ public class EditProfileController {
 	
 	@GetMapping(value = "/edit/skills/{uid}")
 	public String getEditSkills(@PathVariable String uid, Model model) {
-		model.addAttribute("skillForm", new SkillForm(profileRepository.findByUid(uid).getSkills()));
+		model.addAttribute("skillForm", new SkillForm(findProfileService.findByUid(uid).getSkills()));
 		model.addAttribute("uid", uid);
 		return toSkillsJSP(model);
 	}
