@@ -40,13 +40,17 @@ import com.vvs.resume.model.LanguageType;
 public class TestDataGenerator {
 
 	// JDBC setting for database
+//	private static final String JDBC_URL = "jdbc:postgresql://ec2-54-246-85-151.eu-west-1.compute.amazonaws.com:5432/d4jq28mg27rms0";
+//	private static final String JDBC_USERNAME = "nxwqlnpvkloisw";
+//	private static final String JDBC_PASSWORD = "2cb5eb7994005cfd11f061bde4aa11430145ddfaca73c4271bdc6aaa460071d7";
+
 	private static final String JDBC_URL = "jdbc:postgresql://localhost:5432/resume";
 	private static final String JDBC_USERNAME = "victors";
 	private static final String JDBC_PASSWORD = "victor77";
-
+	
 	private static final String PHOTO_PATH = "external/test-data/photos/";
 	private static final String CERTIFICATES_PATH = "external/test-data/certificates/";
-	private static final String MEDIA_DIR = "/Users/victors/Udemy/workspace/resum/src/main/webapp/media";
+	private static final String MEDIA_DIR = "/Users/home/git/resume-java-spring-project/src/main/webapp/media";
 	private static final String COUTRY = "Ukraine";
 	private static final String[] CITIES = { "Kharkiv", "Kiyv", "Odessa" };
 	private static final String[] FOREGIN_LANGUAGES = { "Spanish", "French", "German", "Italian" };
