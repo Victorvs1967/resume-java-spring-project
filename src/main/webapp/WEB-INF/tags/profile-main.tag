@@ -1,7 +1,7 @@
 <%@ tag language="java" pageEncoding="UTF-8" trimDirectiveWhitespaces="true"%>
 
 <div class="card mt-2 mb-2">
-	<a href="/edit"><img class="img-responsive photo" src="${profile.largePhoto}" alt="photo"></a>
+	<a href="/edit"><img class="img-responsive photo w-100" src="${profile.largePhoto}" alt="photo"></a>
 	<div class="card-body p-0">
 		<h2 class="card-title text-left p-3">
 			<a style="color: black; text-decoration: none;" href="/edit">${profile.fullName}</a>

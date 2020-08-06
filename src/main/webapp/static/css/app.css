@@ -19,6 +19,12 @@
 	width: 100%;
 }
 
+.resume .photo-thumbnail {
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	width: 200%;
+}
+
 .resume .container {
 	margin-top: 20px;
 }

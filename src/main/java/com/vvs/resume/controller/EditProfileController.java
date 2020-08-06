@@ -10,19 +10,20 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.vvs.resume.form.SkillForm;
-import com.vvs.resume.repository.storage.ProfileRepository;
-import com.vvs.resume.repository.storage.SkillCategoryRepository;
+import com.vvs.resume.service.EditProfileService;
+import com.vvs.resume.service.FindProfileService;
 
 @Controller
 public class EditProfileController {
 	
 	@Autowired
-	private SkillCategoryRepository skillCategoryRepository;
+	private EditProfileService editProfileService;
 	
 	@Autowired
-	private ProfileRepository profileRepository;
+	private FindProfileService findProfileService;
 	
 	@GetMapping(value="/edit")
 	public String getEditProfile() {
@@ -31,22 +32,23 @@ public class EditProfileController {
 	
 	@GetMapping(value = "/edit/skills/{uid}")
 	public String getEditSkills(@PathVariable String uid, Model model) {
-		model.addAttribute("skillForm", new SkillForm(profileRepository.findByUid(uid).getSkills()));
+		long idProfile = findProfileService.findByUid(uid).getId();
+		model.addAttribute("skillForm", new SkillForm(editProfileService.listSkills(idProfile)));
 		model.addAttribute("uid", uid);
-		return toSkillsJSP(model);
+		return toSkillsJSP(uid, model);
 	}
 
 	@PostMapping(value = "/edit/skills")
-	public String saveEditSkills(@Valid @ModelAttribute("skillForm") SkillForm form, BindingResult bindingResult, Model model) {
+	public String saveEditSkills(@Valid @RequestParam("uid") String uid, @ModelAttribute("skillForm") SkillForm form, BindingResult bindingResult, Model model) {
 		if (bindingResult.hasErrors()) {
-			return toSkillsJSP(model);
+			return toSkillsJSP(uid, model);
         }
 		//TODO Update skills
-		return "redirect:/";
+		return "redirect:/" + uid;
 	}
 	
-	private String toSkillsJSP(Model model) {
-		model.addAttribute("skillCategories", skillCategoryRepository.findAll());
+	private String toSkillsJSP(String uid, Model model) {
+		model.addAttribute("skillCategories", editProfileService.listSkillCategories());
 		return "edit/skills";
 	}
 }
